@@ -27,4 +27,4 @@ const errorHandler = (err, req, res, next) =>{
     }
 };
 
-modules.exports = errorHandler
+module.exports = errorHandler

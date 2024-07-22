@@ -12,9 +12,6 @@ const authRoutes = require('./routes/authRoute.js')
 
 const PORT = process.env.PORT || 8080
 
-//API Routes
-app.use('/api/v1/auth', authRoutes);
-
 //dotenv configure
 dotenv.config()
 
@@ -23,6 +20,9 @@ connect_to_DB();
 
 //rest object
 const app = express()
+
+//API Routes
+app.use('/api/v1/auth', authRoutes);
 
 //middleware
 app.use(cors())
