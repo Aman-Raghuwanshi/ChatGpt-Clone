@@ -6,7 +6,13 @@ const colors = require('colors')
 const dotenv = require('dotenv')
 const connect_to_DB = require('./config/database.js')
 
+//routes path
+const authRoutes = require('./routes/authRoute.js')
+
 const PORT = process.env.PORT || 8080
+
+//API Routes
+app.use('/api/v1/auth', authRoutes);
 
 //dotenv configure
 dotenv.config()
