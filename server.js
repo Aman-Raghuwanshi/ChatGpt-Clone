@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const colors = require('colors')
 const dotenv = require('dotenv')
 const connect_to_DB = require('./config/database.js')
+const errorHandler = require('./middleware/errorMiddleware.js')
 
 //routes path
 const authRoutes = require('./routes/authRoute.js')
@@ -28,6 +29,7 @@ app.use(cors())
 app.use(express.json())
 app.use(bodyParser.urlencoded({extended : false}))
 app.use(morgan('dev'))
+app.use(errorHandler)
 
 //listen server
 app.listen(8080, () => {
