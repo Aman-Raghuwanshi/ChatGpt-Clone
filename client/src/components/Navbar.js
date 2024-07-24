@@ -30,9 +30,14 @@ const Navbar = () => {
         AI GPT 3 CLone
       </Typography>
       {loggedIn ? (
-        <NavLink to="/login" onClick={handleLogout} p={1}>
-          Logout
-        </NavLink>
+        <>
+          <NavLink to="/" p={1}>
+            Home
+          </NavLink>
+          <NavLink to="/login" onClick={handleLogout} p={1}>
+            Logout
+          </NavLink>
+        </>
       ) : (
         <>
           <NavLink to="/register" p={1}>

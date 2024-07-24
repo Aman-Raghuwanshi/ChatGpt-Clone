@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "start": "node server.js",
-    "client":"npm --prefix ./client start",
+    "client": "npm --prefix ./client start",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Aman-Raghuwanshi/ChatGpt-Clone#readme",
   "dependencies": {
+    "@google/generative-ai": "^0.15.0",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "colors": "^1.4.0",
@@ -32,6 +33,7 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.5.1",
     "morgan": "^1.10.0",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "openai": "^4.53.0"
   }
 }

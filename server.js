@@ -30,6 +30,7 @@ app.use(errorHandler);
 
 //API Routes
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/gemini", require("./routes/geminiaiRoute.js"));
 
 //listen server
 app.listen(8080, () => {

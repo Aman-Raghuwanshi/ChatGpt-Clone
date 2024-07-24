@@ -9,6 +9,11 @@ import Homepage from "./pages/Homepage";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { Toaster } from "react-hot-toast";
+import Summary from "./pages/Summary";
+import Paragraph from "./pages/Paragraph";
+import Jscode from "./pages/Jscode.js";
+import Chatbot from "./pages/Chatbot.js";
+import Scifyimage from "./pages/Scifyimage";
 
 function App() {
   const theme = useMemo(() => createTheme(themeSettings(), []));
@@ -22,6 +27,12 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/summary" element={<Summary />} />
+          <Route path="/homepage" element={<Homepage />} />
+          <Route path="/paragraph" element={<Paragraph />} />
+          <Route path="/chatbot" element={<Chatbot />} />
+          <Route path="/jscode" element={<Jscode />} />
+          <Route path="/scifyimage" element={<Scifyimage />} />
         </Routes>
       </ThemeProvider>
     </>
