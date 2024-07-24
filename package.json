@@ -1,5 +1,5 @@
 {
-  "name": "chatgpt-clone",
+  "name": "Textplay.Ai",
   "version": "1.0.0",
   "description": "Chat Gpt Clone",
   "main": "server.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aman-Raghuwanshi/ChatGpt-Clone.git"
+    "url": "git+https://github.com/Aman-Raghuwanshi/Textplay.Ai.git"
   },
   "author": "Aman Raghuwanshi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Aman-Raghuwanshi/ChatGpt-Clone/issues"
+    "url": "https://github.com/Aman-Raghuwanshi/Textplay.Ai/issues"
   },
-  "homepage": "https://github.com/Aman-Raghuwanshi/ChatGpt-Clone#readme",
+  "homepage": "https://github.com/Aman-Raghuwanshi/Textplay.Ai#readme",
   "dependencies": {
     "@google/generative-ai": "^0.15.0",
     "bcryptjs": "^2.4.3",
